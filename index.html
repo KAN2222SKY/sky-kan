@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKY Electronics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SKY Electronics</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Početna</a></li>
+                <li class="dropdown">
+                    <a href="#products">Proizvodi</a>
+                    <div class="dropdown-content">
+                        <a href="#consoles">Konzole</a>
+                        <a href="#headphones">Slušalice</a>
+                        <a href="#cards">Kartice</a>
+                        <a href="#phone-cases">Maske za telefon</a>
+                    </div>
+                </li>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#cart"><i class="cart-icon">🛒</i></a></li>
+                <li><a href="#login">Prijava</a></li>
+                <li>
+                    <select id="currency">
+                        <option value="eur">EUR</option>
+                        <option value="rsd">RSD</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="language">
+                        <option value="sr">Srpski</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Dobrodošli u SKY Electronics</h2>
+            <p>Najmodernija prodavnica elektronike.</p>
+        </section>
+
+        <section id="products">
+            <h2>Proizvodi</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="about">
+            <h2>O nama</h2>
+            <p>Informacije o našoj prodavnici.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Kontaktirajte nas.</p>
+        </section>
+
+        <section id="cart">
+            <h2>Vaša korpa</h2>
+            <p>Proizvodi u vašoj korpi.</p>
+        </section>
+
+        <section id="login">
+            <h2>Prijava</h2>
+            <form id="login-form">
+                <label for="username">Korisničko ime:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Lozinka:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Prijava</button>
+            </form>
+            <p>Novi korisnik? <a href="#register">Registrujte se</a></p>
+        </section>
+
+        <section id="register">
+            <h2>Registracija</h2>
+            <form id="register-form">
+                <label for="new-username">Korisničko ime:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-password">Lozinka:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit">Registracija</button>
+            </form>
+        </section>
+
+        <section id="loyalty">
+            <h2>Loyalty Club</h2>
+            <p>Pridružite se našem Loyalty Club-u i ostvarite popuste.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SKY Electronics. Sva prava zadržana.</p>
+    </footer>
+
+    <div id="livechat">
+        <button id="livechat-button">💬 Customer Support</button>
+        <div id="livechat-window">
+            <h2>Live Chat</h2>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Vaša poruka...">
+            <button id="send-message">Pošalji</button>
+        </div>
+    </div>
+</body>
+</html>
